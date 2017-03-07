@@ -1,0 +1,39 @@
+{
+  "lastModified": "2016-05-27T18:45:14.292Z",
+  "marketingCloud": {
+    "org": "A2E3847157207A807F000101@AdobeOrg"
+  },
+  "target": {
+    "clientCode": "adobeinternalags421",
+    "timeout": 5
+  },
+  "audienceManager": {
+    "server": "bank.demdex.com",
+    "analyticsForwardingEnabled": true,
+    "timeout": 5
+  },
+  "acquisition": {
+    "server": "c00.adobe.com",
+    "appid": "7523ecf083c539da07fc74975e02507ee712b513b61ade697375ba3e62135b5e"
+  },
+  "analytics": {
+    "rsids": "ags421dailydeals",
+    "server": "adobeags421.sc.omtrdc.net",
+    "ssl": true,
+    "offlineEnabled": true,
+    "charset": "UTF-8",
+    "lifecycleTimeout": 300,
+    "privacyDefault": "optedin",
+    "batchLimit": 0,
+    "timezone": "MDT",
+    "timezoneOffset": -360,
+    "referrerTimeout": 5,
+    "backdateSessionInfo": false,
+    "poi": []
+  },
+  "messages": [],
+  "remotes": {
+    "analytics.poi": "",
+    "messages": ""
+  }
+}
