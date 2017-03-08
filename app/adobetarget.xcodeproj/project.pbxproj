@@ -9,9 +9,12 @@
 /* Begin PBXBuildFile section */
 		36189BD11C9A427200B60542 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36189BD01C9A427200B60542 /* SystemConfiguration.framework */; };
 		36189BD31C9A428000B60542 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 36189BD21C9A428000B60542 /* libsqlite3.0.tbd */; };
+		365164C21E70CBFB00DCA71C /* ADBMobileConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 365164BD1E70CBFB00DCA71C /* ADBMobileConfig.json */; };
+		365164C31E70CBFB00DCA71C /* AdobeMobileLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 365164BE1E70CBFB00DCA71C /* AdobeMobileLibrary.a */; };
+		365164C41E70CBFB00DCA71C /* AdobeMobileLibrary_Extension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 365164BF1E70CBFB00DCA71C /* AdobeMobileLibrary_Extension.a */; };
+		365164C51E70CBFB00DCA71C /* AdobeMobileLibrary_TV.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 365164C01E70CBFB00DCA71C /* AdobeMobileLibrary_TV.a */; };
+		365164C61E70CBFB00DCA71C /* AdobeMobileLibrary_Watch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 365164C11E70CBFB00DCA71C /* AdobeMobileLibrary_Watch.a */; };
 		365C72351E6E9F040022FC17 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 365C72331E6E9F040022FC17 /* Launch Screen.storyboard */; };
-		36B278311D3EECF400143D38 /* ADBMobileConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 36B2782C1D3EECED00143D38 /* ADBMobileConfig.json */; };
-		36C03EB11D94C75700CA98CE /* AdobeMobileLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36B2782D1D3EECED00143D38 /* AdobeMobileLibrary.a */; };
 		84E0E9AC1921180E001B388B /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E0E9AB1921180E001B388B /* Logo.png */; };
 		8E3B303818F3C62100DEC655 /* Arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E3B302818F3C62100DEC655 /* Arrow.png */; };
 		8E3B303918F3C62100DEC655 /* Arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E3B302918F3C62100DEC655 /* Arrow@2x.png */; };
@@ -126,13 +129,13 @@
 /* Begin PBXFileReference section */
 		36189BD01C9A427200B60542 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		36189BD21C9A428000B60542 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		365164BC1E70CBFB00DCA71C /* ADBMobile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADBMobile.h; sourceTree = "<group>"; };
+		365164BD1E70CBFB00DCA71C /* ADBMobileConfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ADBMobileConfig.json; sourceTree = "<group>"; };
+		365164BE1E70CBFB00DCA71C /* AdobeMobileLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = AdobeMobileLibrary.a; sourceTree = "<group>"; };
+		365164BF1E70CBFB00DCA71C /* AdobeMobileLibrary_Extension.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = AdobeMobileLibrary_Extension.a; sourceTree = "<group>"; };
+		365164C01E70CBFB00DCA71C /* AdobeMobileLibrary_TV.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = AdobeMobileLibrary_TV.a; sourceTree = "<group>"; };
+		365164C11E70CBFB00DCA71C /* AdobeMobileLibrary_Watch.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = AdobeMobileLibrary_Watch.a; sourceTree = "<group>"; };
 		365C72341E6E9F040022FC17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "adobetarget/Base.lproj/Launch Screen.storyboard"; sourceTree = "<group>"; };
-		36B2782C1D3EECED00143D38 /* ADBMobileConfig.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ADBMobileConfig.json; sourceTree = "<group>"; };
-		36B2782D1D3EECED00143D38 /* AdobeMobileLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = AdobeMobileLibrary.a; sourceTree = "<group>"; };
-		36B2782E1D3EECED00143D38 /* AdobeMobileLibrary_Extension.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = AdobeMobileLibrary_Extension.a; sourceTree = "<group>"; };
-		36B2782F1D3EECED00143D38 /* AdobeMobileLibrary_TV.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = AdobeMobileLibrary_TV.a; sourceTree = "<group>"; };
-		36B278301D3EECED00143D38 /* AdobeMobileLibrary_Watch.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = AdobeMobileLibrary_Watch.a; sourceTree = "<group>"; };
-		36E3342E1DB1FCB100CB2CE3 /* ADBMobile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADBMobile.h; sourceTree = "<group>"; wrapsLines = 1; };
 		84E0E9AB1921180E001B388B /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
 		8E3B302818F3C62100DEC655 /* Arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Arrow.png; sourceTree = "<group>"; };
 		8E3B302918F3C62100DEC655 /* Arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Arrow@2x.png"; sourceTree = "<group>"; };
@@ -156,7 +159,7 @@
 		8E3B304D18F3CB1400DEC655 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		8E3B304F18F3CC6700DEC655 /* DealsDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DealsDetailsViewController.h; sourceTree = "<group>"; };
 		8E3B305018F3CC6700DEC655 /* DealsDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DealsDetailsViewController.m; sourceTree = "<group>"; };
-		8EC0355518F2872200946BA8 /* DailyDeals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyDeals.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EC0355518F2872200946BA8 /* AdobeTarget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdobeTarget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EC0355818F2872200946BA8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8EC0355A18F2872200946BA8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		8EC0355C18F2872200946BA8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -170,7 +173,7 @@
 		8EC0356D18F2872200946BA8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = adobetarget/ViewController.h; sourceTree = SOURCE_ROOT; };
 		8EC0356E18F2872200946BA8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = adobetarget/ViewController.m; sourceTree = SOURCE_ROOT; };
 		8EC0357018F2872200946BA8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		8EC0357618F2872300946BA8 /* DailyDealsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyDealsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EC0357618F2872300946BA8 /* AdobeTargetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdobeTargetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EC0357718F2872300946BA8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		8EC0357F18F2872300946BA8 /* DailyDealsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DailyDealsTests-Info.plist"; sourceTree = "<group>"; };
 		8EC0358118F2872300946BA8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -256,12 +259,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				36189BD31C9A428000B60542 /* libsqlite3.0.tbd in Frameworks */,
+				365164C61E70CBFB00DCA71C /* AdobeMobileLibrary_Watch.a in Frameworks */,
+				365164C41E70CBFB00DCA71C /* AdobeMobileLibrary_Extension.a in Frameworks */,
 				36189BD11C9A427200B60542 /* SystemConfiguration.framework in Frameworks */,
 				8EEF9FBF18F420740022E7BB /* QuartzCore.framework in Frameworks */,
 				8EC0355B18F2872200946BA8 /* CoreGraphics.framework in Frameworks */,
 				8EC0355D18F2872200946BA8 /* UIKit.framework in Frameworks */,
+				365164C51E70CBFB00DCA71C /* AdobeMobileLibrary_TV.a in Frameworks */,
+				365164C31E70CBFB00DCA71C /* AdobeMobileLibrary.a in Frameworks */,
 				8EC0355918F2872200946BA8 /* Foundation.framework in Frameworks */,
-				36C03EB11D94C75700CA98CE /* AdobeMobileLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,15 +284,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		36B2782A1D3EECED00143D38 /* AdobeMobileLibrary */ = {
+		365164BB1E70CBFB00DCA71C /* AdobeMobileLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				36E3342E1DB1FCB100CB2CE3 /* ADBMobile.h */,
-				36B2782C1D3EECED00143D38 /* ADBMobileConfig.json */,
-				36B2782D1D3EECED00143D38 /* AdobeMobileLibrary.a */,
-				36B2782E1D3EECED00143D38 /* AdobeMobileLibrary_Extension.a */,
-				36B2782F1D3EECED00143D38 /* AdobeMobileLibrary_TV.a */,
-				36B278301D3EECED00143D38 /* AdobeMobileLibrary_Watch.a */,
+				365164BC1E70CBFB00DCA71C /* ADBMobile.h */,
+				365164BD1E70CBFB00DCA71C /* ADBMobileConfig.json */,
+				365164BE1E70CBFB00DCA71C /* AdobeMobileLibrary.a */,
+				365164BF1E70CBFB00DCA71C /* AdobeMobileLibrary_Extension.a */,
+				365164C01E70CBFB00DCA71C /* AdobeMobileLibrary_TV.a */,
+				365164C11E70CBFB00DCA71C /* AdobeMobileLibrary_Watch.a */,
 			);
 			path = AdobeMobileLibrary;
 			sourceTree = "<group>";
@@ -319,7 +325,7 @@
 		8EC0354C18F2872200946BA8 = {
 			isa = PBXGroup;
 			children = (
-				36B2782A1D3EECED00143D38 /* AdobeMobileLibrary */,
+				365164BB1E70CBFB00DCA71C /* AdobeMobileLibrary */,
 				8EC0355E18F2872200946BA8 /* AdobeTarget */,
 				8EC0357D18F2872300946BA8 /* AdobeTargetTests */,
 				8EC0355718F2872200946BA8 /* Frameworks */,
@@ -330,8 +336,8 @@
 		8EC0355618F2872200946BA8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8EC0355518F2872200946BA8 /* DailyDeals.app */,
-				8EC0357618F2872300946BA8 /* DailyDealsTests.xctest */,
+				8EC0355518F2872200946BA8 /* AdobeTarget.app */,
+				8EC0357618F2872300946BA8 /* AdobeTargetTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -541,9 +547,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8EC0355418F2872200946BA8 /* DailyDeals */ = {
+		8EC0355418F2872200946BA8 /* AdobeTarget */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8EC0358718F2872300946BA8 /* Build configuration list for PBXNativeTarget "DailyDeals" */;
+			buildConfigurationList = 8EC0358718F2872300946BA8 /* Build configuration list for PBXNativeTarget "AdobeTarget" */;
 			buildPhases = (
 				8EC0355118F2872200946BA8 /* Sources */,
 				8EC0355218F2872200946BA8 /* Frameworks */,
@@ -553,14 +559,14 @@
 			);
 			dependencies = (
 			);
-			name = DailyDeals;
+			name = AdobeTarget;
 			productName = DailyDeals;
-			productReference = 8EC0355518F2872200946BA8 /* DailyDeals.app */;
+			productReference = 8EC0355518F2872200946BA8 /* AdobeTarget.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8EC0357518F2872300946BA8 /* DailyDealsTests */ = {
+		8EC0357518F2872300946BA8 /* AdobeTargetTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8EC0358A18F2872300946BA8 /* Build configuration list for PBXNativeTarget "DailyDealsTests" */;
+			buildConfigurationList = 8EC0358A18F2872300946BA8 /* Build configuration list for PBXNativeTarget "AdobeTargetTests" */;
 			buildPhases = (
 				8EC0357218F2872300946BA8 /* Sources */,
 				8EC0357318F2872300946BA8 /* Frameworks */,
@@ -571,9 +577,9 @@
 			dependencies = (
 				8EC0357C18F2872300946BA8 /* PBXTargetDependency */,
 			);
-			name = DailyDealsTests;
+			name = AdobeTargetTests;
 			productName = DailyDealsTests;
-			productReference = 8EC0357618F2872300946BA8 /* DailyDealsTests.xctest */;
+			productReference = 8EC0357618F2872300946BA8 /* AdobeTargetTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -587,9 +593,6 @@
 				TargetAttributes = {
 					8EC0355418F2872200946BA8 = {
 						ProvisioningStyle = Automatic;
-					};
-					8EC0357518F2872300946BA8 = {
-						TestTargetID = 8EC0355418F2872200946BA8;
 					};
 				};
 			};
@@ -606,8 +609,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8EC0355418F2872200946BA8 /* DailyDeals */,
-				8EC0357518F2872300946BA8 /* DailyDealsTests */,
+				8EC0355418F2872200946BA8 /* AdobeTarget */,
+				8EC0357518F2872300946BA8 /* AdobeTargetTests */,
 			);
 		};
 /* End PBXProject section */
@@ -627,7 +630,6 @@
 				8EC035BC18F2CF2D00946BA8 /* price-rectangle.png in Resources */,
 				8E3B304318F3C62100DEC655 /* cross@2x.png in Resources */,
 				8EC035BF18F2CF2D00946BA8 /* detailWithLine@2x.png in Resources */,
-				36B278311D3EECF400143D38 /* ADBMobileConfig.json in Resources */,
 				8EEF9FC218F421C80022E7BB /* barcodeimage.png in Resources */,
 				8E3B303F18F3C62100DEC655 /* btnEdit@2x.png in Resources */,
 				8EEF9FB018F417CB0022E7BB /* barCode.png in Resources */,
@@ -685,6 +687,7 @@
 				8E3B303918F3C62100DEC655 /* Arrow@2x.png in Resources */,
 				8EC035C218F2D7EE00946BA8 /* profileSubView.png in Resources */,
 				8EEF9F9218F3F6610022E7BB /* Time-Icon.png in Resources */,
+				365164C21E70CBFB00DCA71C /* ADBMobileConfig.json in Resources */,
 				8EC035BB18F2CF2D00946BA8 /* Search-Icon.png in Resources */,
 				8EEF9F9018F3F6610022E7BB /* purchaseDetails.png in Resources */,
 				8EC035C318F2D7EE00946BA8 /* profileSubView@2x.png in Resources */,
@@ -743,7 +746,7 @@
 /* Begin PBXTargetDependency section */
 		8EC0357C18F2872300946BA8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8EC0355418F2872200946BA8 /* DailyDeals */;
+			target = 8EC0355418F2872200946BA8 /* AdobeTarget */;
 			targetProxy = 8EC0357B18F2872300946BA8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -917,7 +920,6 @@
 		8EC0358B18F2872300946BA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DailyDeals.app/DailyDeals";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -937,7 +939,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.teks.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -945,7 +946,6 @@
 		8EC0358C18F2872300946BA8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DailyDeals.app/DailyDeals";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -961,7 +961,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.teks.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
@@ -978,7 +977,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8EC0358718F2872300946BA8 /* Build configuration list for PBXNativeTarget "DailyDeals" */ = {
+		8EC0358718F2872300946BA8 /* Build configuration list for PBXNativeTarget "AdobeTarget" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8EC0358818F2872300946BA8 /* Debug */,
@@ -987,7 +986,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8EC0358A18F2872300946BA8 /* Build configuration list for PBXNativeTarget "DailyDealsTests" */ = {
+		8EC0358A18F2872300946BA8 /* Build configuration list for PBXNativeTarget "AdobeTargetTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8EC0358B18F2872300946BA8 /* Debug */,
