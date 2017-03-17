@@ -9,7 +9,6 @@
 #import "DailyDealsViewController.h"
 #import "DailyDealsCell.h"
 #import "ProfileViewController.h"
-#import "DealsDetailsViewController.h"
 #import "Container.h"
 @interface DailyDealsViewController ()
 

@@ -35,7 +35,6 @@
 		8E3B304A18F3C67300DEC655 /* EditView.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E3B304818F3C67300DEC655 /* EditView.png */; };
 		8E3B304B18F3C67300DEC655 /* EditView@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E3B304918F3C67300DEC655 /* EditView@2x.png */; };
 		8E3B304E18F3CB1400DEC655 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3B304D18F3CB1400DEC655 /* ProfileViewController.m */; };
-		8E3B305118F3CC6800DEC655 /* DealsDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3B305018F3CC6700DEC655 /* DealsDetailsViewController.m */; };
 		8EC0355918F2872200946BA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EC0355818F2872200946BA8 /* Foundation.framework */; };
 		8EC0355B18F2872200946BA8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EC0355A18F2872200946BA8 /* CoreGraphics.framework */; };
 		8EC0355D18F2872200946BA8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EC0355C18F2872200946BA8 /* UIKit.framework */; };
@@ -95,7 +94,6 @@
 		8EEF9FA118F4025F0022E7BB /* purchaseButtom.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EEF9F9D18F4025F0022E7BB /* purchaseButtom.png */; };
 		8EEF9FA218F4025F0022E7BB /* purchaseButtom@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EEF9F9E18F4025F0022E7BB /* purchaseButtom@2x.png */; };
 		8EEF9FA518F40F030022E7BB /* MyPurchaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EEF9FA418F40F030022E7BB /* MyPurchaseCell.m */; };
-		8EEF9FA818F414840022E7BB /* CouponViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EEF9FA718F414840022E7BB /* CouponViewController.m */; };
 		8EEF9FB018F417CB0022E7BB /* barCode.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EEF9FAA18F417CB0022E7BB /* barCode.png */; };
 		8EEF9FB118F417CB0022E7BB /* barCode@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EEF9FAB18F417CB0022E7BB /* barCode@2x.png */; };
 		8EEF9FB218F417CB0022E7BB /* couponBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EEF9FAC18F417CB0022E7BB /* couponBackground.png */; };
@@ -157,8 +155,6 @@
 		8E3B304918F3C67300DEC655 /* EditView@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "EditView@2x.png"; sourceTree = "<group>"; };
 		8E3B304C18F3CB1400DEC655 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		8E3B304D18F3CB1400DEC655 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
-		8E3B304F18F3CC6700DEC655 /* DealsDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DealsDetailsViewController.h; sourceTree = "<group>"; };
-		8E3B305018F3CC6700DEC655 /* DealsDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DealsDetailsViewController.m; sourceTree = "<group>"; };
 		8EC0355518F2872200946BA8 /* AdobeTarget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdobeTarget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EC0355818F2872200946BA8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8EC0355A18F2872200946BA8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -228,8 +224,6 @@
 		8EEF9F9E18F4025F0022E7BB /* purchaseButtom@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "purchaseButtom@2x.png"; sourceTree = "<group>"; };
 		8EEF9FA318F40F030022E7BB /* MyPurchaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPurchaseCell.h; sourceTree = "<group>"; };
 		8EEF9FA418F40F030022E7BB /* MyPurchaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPurchaseCell.m; sourceTree = "<group>"; };
-		8EEF9FA618F414840022E7BB /* CouponViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CouponViewController.h; sourceTree = "<group>"; };
-		8EEF9FA718F414840022E7BB /* CouponViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CouponViewController.m; sourceTree = "<group>"; };
 		8EEF9FAA18F417CB0022E7BB /* barCode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = barCode.png; sourceTree = "<group>"; };
 		8EEF9FAB18F417CB0022E7BB /* barCode@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "barCode@2x.png"; sourceTree = "<group>"; };
 		8EEF9FAC18F417CB0022E7BB /* couponBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = couponBackground.png; sourceTree = "<group>"; };
@@ -466,14 +460,10 @@
 				8EC0356E18F2872200946BA8 /* ViewController.m */,
 				8E3B304C18F3CB1400DEC655 /* ProfileViewController.h */,
 				8E3B304D18F3CB1400DEC655 /* ProfileViewController.m */,
-				8E3B304F18F3CC6700DEC655 /* DealsDetailsViewController.h */,
-				8E3B305018F3CC6700DEC655 /* DealsDetailsViewController.m */,
 				8EEF9F9418F3FF410022E7BB /* RegistrationViewController.h */,
 				8EEF9F9518F3FF410022E7BB /* RegistrationViewController.m */,
 				8EEF9F9718F400760022E7BB /* MyPurchaseViewController.h */,
 				8EEF9F9818F400760022E7BB /* MyPurchaseViewController.m */,
-				8EEF9FA618F414840022E7BB /* CouponViewController.h */,
-				8EEF9FA718F414840022E7BB /* CouponViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -720,9 +710,7 @@
 				8EEF9F9618F3FF410022E7BB /* RegistrationViewController.m in Sources */,
 				8EEF9F9918F400760022E7BB /* MyPurchaseViewController.m in Sources */,
 				8EC035CD18F2DE8300946BA8 /* DailyDealsViewController.m in Sources */,
-				8EEF9FA818F414840022E7BB /* CouponViewController.m in Sources */,
 				8EC0356918F2872200946BA8 /* AppDelegate.m in Sources */,
-				8E3B305118F3CC6800DEC655 /* DealsDetailsViewController.m in Sources */,
 				8EC0356518F2872200946BA8 /* main.m in Sources */,
 				8E3B304E18F3CB1400DEC655 /* ProfileViewController.m in Sources */,
 				8EEF9FC818F42A790022E7BB /* AppMenuView.m in Sources */,
