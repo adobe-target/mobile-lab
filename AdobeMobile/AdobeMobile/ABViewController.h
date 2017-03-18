@@ -12,8 +12,8 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *welcomeMessage;
 
--(void)welcomeMessageCampaign;
--(void)welcomeMessageCampaignChanges: (NSString*) content;
+-(void)ABActivity;
+-(void)ABActivityChanges: (NSString*) content;
 
 
 @end
