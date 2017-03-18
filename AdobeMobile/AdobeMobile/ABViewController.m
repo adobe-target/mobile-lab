@@ -25,9 +25,12 @@
 
 - (void)ABActivity
 {
+    
     // Here 'a1-mobile-ab' is the name of the location. This will show up in the content
     // location dropdown in the Target UI.
 
+    // Replace a1 with your unique user number.
+    
     ADBTargetLocationRequest* locationRequest = [ADBMobile targetCreateRequestWithName:@"a1-mobile-ab"
                                                                         defaultContent:@"Hello there!"
                                                                             parameters:nil];
@@ -41,6 +44,7 @@
         [self performSelectorOnMainThread:@selector(ABActivityChanges:) withObject:content waitUntilDone:NO];
         
     }];
+    
 }
 
 -(void)ABActivityChanges: (NSString*) content
