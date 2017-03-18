@@ -32,14 +32,17 @@
     NSArray *levels = [NSArray arrayWithObjects: @"silver", @"gold", @"sapphire", nil];
     NSString *randomLevel = [levels objectAtIndex:arc4random()%[levels count]];
     NSLog(@"Your member level is %@", randomLevel);
-    
     [ADBMobile targetClearCookies];
     
     // Set the member level as a mbox parameter
     NSDictionary *targetParams = [[NSDictionary alloc] initWithObjectsAndKeys:
                                   randomLevel, @"memberLevel",
                                   nil];
-    ADBTargetLocationRequest* locationRequest = [ADBMobile targetCreateRequestWithName:@"a1-mobile-xt"
+    
+     // Here 'a1-mobile-xt' is the name of the location. This will show up in the content
+     // location dropdown in the UI.
+
+     ADBTargetLocationRequest* locationRequest = [ADBMobile targetCreateRequestWithName:@"a1-mobile-xt"
                                                                         defaultContent:@"Hello there!"
                                                                             parameters:targetParams];
     

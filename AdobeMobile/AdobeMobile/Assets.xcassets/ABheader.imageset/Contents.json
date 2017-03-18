@@ -2,7 +2,6 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Screenshot 2017-03-17 09.48.05.png",
       "scale" : "1x"
     },
     {
@@ -12,6 +11,7 @@
     },
     {
       "idiom" : "universal",
+      "filename" : "Screenshot 2017-03-17 09.48.05.png",
       "scale" : "3x"
     }
   ],

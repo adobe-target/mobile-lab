@@ -27,7 +27,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void) mboxParamsActivity {
+- (void)mboxParamsActivity {
 
     NSArray *categories = [NSArray arrayWithObjects: @"men", @"women", @"boys", @"girls", @"home", @"sale", nil];
     NSString *randomCategory = [categories objectAtIndex:arc4random()%[categories count]];
@@ -48,14 +48,14 @@
     
     [ADBMobile targetLoadRequest:locationRequest callback:^(NSString *content){
         NSLog(@"⚡️Response from Target --- %@ ⚡️", content);
-        [self performSelectorOnMainThread:@selector(welcomeMessageCampaignChanges:) withObject:content waitUntilDone:NO];
+        [self performSelectorOnMainThread:@selector(mboxParamsActivityChanges:) withObject:content waitUntilDone:NO];
         
     }];
 }
 
 
 
--(void)welcomeMessageCampaignChanges: (NSString*) content
+-(void)mboxParamsActivityChanges: (NSString*) content
 {
 
 //    NSDataDetector* detector = [NSDataDetector dataDetectorWithTypes:NSTextCheckingTypeLink error:nil];

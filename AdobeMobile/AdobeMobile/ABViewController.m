@@ -30,8 +30,7 @@
 
 - (void)welcomeMessageCampaign
 {
-    
-    // Here 'welcome-message-rp' is the name of the location. This will show up in the content
+    // Here 'a1-mobile-ab' is the name of the location. This will show up in the content
     // location dropdown in the UI.
     
     [ADBMobile targetClearCookies];
@@ -42,8 +41,8 @@
     [ADBMobile targetLoadRequest:locationRequest callback:^(NSString *content){
         NSLog(@"⚡️Response from Target --- %@ ⚡️", content);
         
-        // It is typically a bad practice to run on the main thread! This is just for the demo.
-        // In your production app, get this content before the view is rendered so that the end
+        // It is typically a bad practice to run on the main thread! This is just for the sample app.
+        // In your production app, get this content asyncronously before the view is rendered so that the end
         // user won't see a flicker when new content is inserted or replaced.
         [self performSelectorOnMainThread:@selector(welcomeMessageCampaignChanges:) withObject:content waitUntilDone:NO];
         
