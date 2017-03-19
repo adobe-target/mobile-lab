@@ -31,7 +31,6 @@
 
     // Replace a1 with your unique user number.
     
-    [ADBMobile targetClearCookies];
     ADBTargetLocationRequest* locationRequest = [ADBMobile targetCreateRequestWithName:@"a1-mobile-ab"
                                                                         defaultContent:@"Hello there!"
                                                                             parameters:nil];
