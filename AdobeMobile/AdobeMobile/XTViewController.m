@@ -26,7 +26,7 @@
 
 - (void)XTActivity {
 
-    /*
+    
     // Assign a random member level and reset user
     NSArray *levels = [NSArray arrayWithObjects: @"silver", @"gold", @"sapphire", nil];
     NSString *randomLevel = [levels objectAtIndex:arc4random()%[levels count]];
@@ -50,7 +50,7 @@
     [ADBMobile targetLoadRequest:locationRequest callback:^(NSString *content){
         [self performSelectorOnMainThread:@selector(XTActivityChanges:) withObject:content waitUntilDone:NO];
     }];
-    */
+    
 }
 
 -(void)XTActivityChanges: (NSString*) content {
