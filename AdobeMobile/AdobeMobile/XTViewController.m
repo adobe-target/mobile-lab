@@ -16,8 +16,8 @@
 @implementation XTViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
     [self XTActivity];
+    [super viewDidLoad];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -54,13 +54,16 @@
 }
 
 -(void)XTActivityChanges: (NSString*) content {
-    NSLog(@"⚡️Response from Target --- %@ ⚡️", content);
-    if ([content  isEqual: @"silver"]) {
-        self.memberLevel.image = [UIImage imageNamed:@"memberLevelSilver"];
-    } else if ([content  isEqual: @"gold"]) {
-        self.memberLevel.image = [UIImage imageNamed:@"memberLevelGold"];
-    } else if ([content  isEqual: @"sapphire"]){
-        self.memberLevel.image = [UIImage imageNamed:@"memberLevelSapphire"];
+    NSDataDetector* detector = [NSDataDetector dataDetectorWithTypes:NSTextCheckingTypeLink error:nil];
+    NSArray* matches = [detector matchesInString:content options:0
+                                           range:NSMakeRange(0, [content length])];
+    for (NSTextCheckingResult *match in matches) {
+        NSURL *imageUrl = [match URL];
+        NSURLSession *session = [NSURLSession sharedSession];
+        [[session dataTaskWithURL:imageUrl
+                completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+                    _memberLevel.image = [UIImage imageWithData:data];
+                }] resume];
     }
 }
 
