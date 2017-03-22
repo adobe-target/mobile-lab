@@ -27,8 +27,8 @@
 }
 
 - (void)audienceManagerBannerActivity {
-//    [ADBMobile visitorSyncIdentifiers:@{@"member_guid":@"123456785"}];
-//    [ADBMobile visitorSyncIdentifiers:@{@"my-customer-id":@"123456785"} authenticationState:ADBMobileVisitorAuthenticationStateAuthenticated];
+    [ADBMobile visitorSyncIdentifiers:@{@"member_guid":@"123456785"}];
+    [ADBMobile visitorSyncIdentifiers:@{@"my-customer-id":@"123456785"} authenticationState:ADBMobileVisitorAuthenticationStateAuthenticated];
 
     
     ADBTargetLocationRequest* locationRequest = [ADBMobile targetCreateRequestWithName:@"a1-mobile-aam"
@@ -40,7 +40,8 @@
         [self performSelectorOnMainThread:@selector(audienceManagerBannerActivityChanges:) withObject:content waitUntilDone:NO];
         
     }];
-
+    
+    [ADBMobile trackState:@"Audience Manager Screen" data:nil];
     
 }
 

@@ -29,14 +29,13 @@
 
 - (void)profileParamsActivity {
 
+    NSArray *houses = [NSArray arrayWithObjects: @"stark", @"lannister", @"targayren", @"baratheon", @"bolton", nil];
+    NSString *randomHouse = [houses objectAtIndex:arc4random()%[houses count]];
+    NSLog(@"Your house is %@", randomHouse);
+    [ADBMobile targetClearCookies];
+
     NSDictionary *targetParams = [[NSDictionary alloc] initWithObjectsAndKeys:
-                                  @"uk", @"profile.country",
-                                  @"yes", @"profile.hasChecking",
-                                  @"yes", @"profile.hasMortgage",
-                                  @"no", @"profile.hasAutoLoan",
-                                  @"no",@"profile.hasRetirement",
-                                  @"2", @"profile.activeAccounts",
-                                  @"no", @"profile.isPrivateClient",
+                                  randomHouse, @"profile.house",
                                   nil];
     
     ADBTargetLocationRequest* locationRequest = [ADBMobile targetCreateRequestWithName:@"a1-mobile-profileparams"
@@ -51,16 +50,17 @@
 
 
 -(void)profileParamsActivityChanges: (NSString*) content {
-    NSLog(@"⚡️Response from Target --- %@ ⚡️", content);
-
-    NSString *imageUrl = content;
-    NSURLSession *session = [NSURLSession sharedSession];
-    [[session dataTaskWithURL:[NSURL URLWithString:imageUrl]
-            completionHandler:^(NSData *data,
-                                NSURLResponse *response,
-                                NSError *error) {
-                _profileParamsBanner.image = [UIImage imageWithData:data];
-            }] resume];
+    NSDataDetector* detector = [NSDataDetector dataDetectorWithTypes:NSTextCheckingTypeLink error:nil];
+    NSArray* matches = [detector matchesInString:content options:0
+                                           range:NSMakeRange(0, [content length])];
+    for (NSTextCheckingResult *match in matches) {
+        NSURL *imageUrl = [match URL];
+        NSURLSession *session = [NSURLSession sharedSession];
+        [[session dataTaskWithURL:imageUrl
+                completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+                    _profileParamsBanner.image = [UIImage imageWithData:data];
+                }] resume];
+    }
 }
 
 @end

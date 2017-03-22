@@ -11,7 +11,7 @@
 
 
 @interface MboxParamsViewController ()
-@property (weak, nonatomic) IBOutlet UIButton *mboxParamsBanner;
+@property (weak, nonatomic) IBOutlet UIImageView *mboxParamsBanner;
 
 @end
 
@@ -24,22 +24,14 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (void)mboxParamsActivity {
 
-    NSArray *categories = [NSArray arrayWithObjects: @"men", @"women", @"boys", @"girls", @"home", @"sale", nil];
-    NSString *randomCategory = [categories objectAtIndex:arc4random()%[categories count]];
-    NSLog(@"Your category is %@", randomCategory);
-
-    
-    
     // Set the member level as a mbox parameter
     NSDictionary *targetParams = [[NSDictionary alloc] initWithObjectsAndKeys:
-                                  @"women", @"currentCategory",
-                                  @"120.00", @"cartValue",
-                                  @"4", @"itemsInCart",
+                                  @"business", @"currentCategory",
+                                  @"yes", @"isloggedin",
                                   nil];
     
     ADBTargetLocationRequest* locationRequest = [ADBMobile targetCreateRequestWithName:@"a1-mobile-mboxparams"
@@ -57,14 +49,14 @@
 
 -(void)mboxParamsActivityChanges: (NSString*) content
 {
-
-//    NSDataDetector* detector = [NSDataDetector dataDetectorWithTypes:NSTextCheckingTypeLink error:nil];
-//    NSArray* matches = [detector matchesInString:content options:0 range:NSMakeRange(0, [content length])];
-//    for (NSTextCheckingResult *match in matches) {
-//        NSURL *url = [match URL];
-//    }
-
-    [_mboxParamsBanner setTitle: content forState: UIControlStateNormal];
+    NSString *imageUrl = content;
+    NSURLSession *session = [NSURLSession sharedSession];
+    [[session dataTaskWithURL:[NSURL URLWithString:imageUrl]
+            completionHandler:^(NSData *data,
+                                NSURLResponse *response,
+                                NSError *error) {
+                _mboxParamsBanner.image = [UIImage imageWithData:data];
+            }] resume];
 }
 
 @end

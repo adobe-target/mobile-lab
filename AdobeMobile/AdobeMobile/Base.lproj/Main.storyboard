@@ -63,10 +63,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RWX-WP-fbC">
-                                <rect key="frame" x="61" y="90" width="300" height="80"/>
+                                <rect key="frame" x="37" y="121" width="300" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.22881094044926811" green="0.35429050900710168" blue="0.9994240403175354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Mbox Parameters">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" red="0.19596968843410317" green="0.72336632013320923" blue="0.55158128535189077" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -76,10 +76,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lrt-hi-ea6">
-                                <rect key="frame" x="61" y="225" width="300" height="80"/>
+                                <rect key="frame" x="37" y="223" width="300" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.2288109404" green="0.35429050899999998" blue="0.99942404029999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Profile Parameters">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" red="0.19596968840000001" green="0.72336632010000002" blue="0.55158128539999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -89,10 +89,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EI8-XN-1lU">
-                                <rect key="frame" x="61" y="369" width="300" height="80"/>
+                                <rect key="frame" x="37" y="434" width="300" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.2288109404" green="0.35429050899999998" blue="0.99942404029999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Customer Attributes">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" red="0.19596968840000001" green="0.72336632010000002" blue="0.55158128539999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -102,10 +102,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIy-QR-GjD">
-                                <rect key="frame" x="61" y="496" width="300" height="80"/>
+                                <rect key="frame" x="37" y="331" width="300" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.2288109404" green="0.35429050899999998" blue="0.99942404029999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Audience Manager">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" red="0.19596968840000001" green="0.72336632010000002" blue="0.55158128539999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -121,7 +121,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o0h-HB-gNF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1952.1739130434785" y="311.41304347826087"/>
+            <point key="canvasLocation" x="1951.2" y="310.79460269865069"/>
         </scene>
         <!--Mbox Params View Controller-->
         <scene sceneID="iUc-IW-hdk">
@@ -142,21 +142,31 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="81m-DN-WMd">
-                                <rect key="frame" x="0.0" y="560" width="414" height="127"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MboxHeader" translatesAutoresizingMaskIntoConstraints="NO" id="NfE-6m-w8k">
+                                <rect key="frame" x="0.0" y="55" width="375" height="349"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.9994240403175354" green="0.44035917364081545" blue="0.4713954392962611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </button>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="This view sends some contextual mbox parameters in the Target call which are in turn used to build audiences " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Vfe-RU-3B6">
+                                <rect key="frame" x="0.0" y="404" width="375" height="113"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.97705024480819702" green="0.95333486795425415" blue="0.92802304029464722" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gdE-wM-Ylr">
+                                <rect key="frame" x="0.0" y="514" width="375" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="mboxParamsBanner" destination="81m-DN-WMd" id="9kP-zM-iNo"/>
+                        <outlet property="mboxParamsBanner" destination="gdE-wM-Ylr" id="D7f-9r-AIL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0pd-O5-O66" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3034.7826086956525" y="-300"/>
+            <point key="canvasLocation" x="3034.4000000000001" y="-300"/>
         </scene>
         <!--Customer Attributes View Controller-->
         <scene sceneID="md2-9O-8oe">
@@ -277,27 +287,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Profile Params" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oiH-7U-UtM">
-                                <rect key="frame" x="52" y="132" width="196" height="89"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4hM-gw-I11">
-                                <rect key="frame" x="0.0" y="559" width="414" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IKK-OR-Lc2">
+                                <rect key="frame" x="0.0" y="64" width="375" height="560"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="profileParamsBanner" destination="4hM-gw-I11" id="7OG-1e-NUW"/>
+                        <outlet property="profileParamsBanner" destination="IKK-OR-Lc2" id="YJp-sW-laK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aej-2S-VgO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2994.202898550725" y="613.85869565217399"/>
+            <point key="canvasLocation" x="2992.8000000000002" y="613.04347826086962"/>
         </scene>
         <!--XT-->
         <scene sceneID="wg7-f3-ORb">
@@ -502,6 +505,7 @@
     </scenes>
     <resources>
         <image name="ABheader" width="197" height="213"/>
+        <image name="MboxHeader" width="315" height="242"/>
         <image name="XTheader" width="250" height="250"/>
         <image name="second" width="30" height="30"/>
     </resources>
