@@ -30,7 +30,7 @@
 
     // Set the member level as a mbox parameter
     NSDictionary *targetParams = [[NSDictionary alloc] initWithObjectsAndKeys:
-                                  @"business", @"currentCategory",
+                                  @"fashion", @"currentCategory",
                                   @"yes", @"isloggedin",
                                   nil];
     
@@ -40,7 +40,7 @@
     
     [ADBMobile targetLoadRequest:locationRequest callback:^(NSString *content){
         NSLog(@"⚡️Response from Target --- %@ ⚡️", content);
-        [self performSelectorOnMainThread:@selector(mboxParamsActivityChanges:) withObject:content waitUntilDone:NO];
+        [self performSelectorOnMainThread:@selector(mboxParamsActivityChanges:) withObject:content waitUntilDone:YES];
         
     }];
 }

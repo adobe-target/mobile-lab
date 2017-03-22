@@ -43,7 +43,7 @@
                                                                             parameters:targetParams];
     
     [ADBMobile targetLoadRequest:locationRequest callback:^(NSString *content){
-        [self performSelectorOnMainThread:@selector(profileParamsActivityChanges:) withObject:content waitUntilDone:NO];
+        [self performSelectorOnMainThread:@selector(profileParamsActivityChanges:) withObject:content waitUntilDone:YES];
     }];
 
 }

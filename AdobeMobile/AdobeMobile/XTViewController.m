@@ -26,7 +26,7 @@
 
 - (void)XTActivity {
 
-    
+    /*
     // Assign a random member level and reset user
     NSArray *levels = [NSArray arrayWithObjects: @"silver", @"gold", @"sapphire", nil];
     NSString *randomLevel = [levels objectAtIndex:arc4random()%[levels count]];
@@ -48,8 +48,9 @@
                                                                             parameters:targetParams];
     
     [ADBMobile targetLoadRequest:locationRequest callback:^(NSString *content){
-        [self performSelectorOnMainThread:@selector(XTActivityChanges:) withObject:content waitUntilDone:NO];
+        [self performSelectorOnMainThread:@selector(XTActivityChanges:) withObject:content waitUntilDone:YES];
     }];
+    */
     
 }
 
@@ -59,12 +60,13 @@
                                            range:NSMakeRange(0, [content length])];
     for (NSTextCheckingResult *match in matches) {
         NSURL *imageUrl = [match URL];
+        
         NSURLSession *session = [NSURLSession sharedSession];
+
         [[session dataTaskWithURL:imageUrl
                 completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
                     _memberLevel.image = [UIImage imageWithData:data];
                 }] resume];
     }
 }
-
 @end
