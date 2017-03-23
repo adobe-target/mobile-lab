@@ -51,7 +51,6 @@
         [self performSelectorOnMainThread:@selector(XTActivityChanges:) withObject:content waitUntilDone:YES];
     }];
     */
-    
 }
 
 -(void)XTActivityChanges: (NSString*) content {
@@ -70,3 +69,4 @@
     }
 }
 @end
+

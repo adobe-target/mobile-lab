@@ -34,8 +34,16 @@
     NSLog(@"Your house is %@", randomHouse);
     [ADBMobile targetClearCookies];
 
+    NSArray *nbaPlayer = [NSArray arrayWithObjects: @"curry", @"james", @"bryant", @"jordan", nil];
+    NSString *randomPlayer = [nbaPlayer objectAtIndex:arc4random()%[nbaPlayer count]];
+    NSLog(@"Your nba player is %@", randomPlayer);
+
+    
     NSDictionary *targetParams = [[NSDictionary alloc] initWithObjectsAndKeys:
                                   randomHouse, @"profile.house",
+                                  randomPlayer, @"profile.playerName",
+//                                  @"targayren", @"profile.gotlastname",
+//                                  @"curry", @"profile.nbalastname",
                                   nil];
     
     ADBTargetLocationRequest* locationRequest = [ADBMobile targetCreateRequestWithName:@"a1-mobile-profileparams"
